@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { toast } from 'react-toastify';
 import { ToastContainer, toast } from 'react-toast'
 import { nanoid } from 'nanoid';
 import { SurchForm, Input, Button, Label } from './Form.styled';
@@ -56,7 +55,7 @@ export function Form() {
         <label htmlFor={numberInputIdGenerate}>Number:</label>
       </Label>
       <Input
-        type="text"
+        type="tel"
         name="number"
         value={number}
         onChange={handleChange}
