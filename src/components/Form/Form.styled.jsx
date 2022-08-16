@@ -7,7 +7,7 @@ export const SurchForm = styled.form`
   border: 4px solid rgb(94, 94, 155);
   padding: 15px;
 `;
-export const Label = styled.label`
+export const Label = styled.h2`
   font-size: 20px;
   display: flex;
   justify-content: space-between;

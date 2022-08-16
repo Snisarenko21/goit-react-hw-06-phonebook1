@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { Field, FieldInput } from './Filter.styled';
+import { Field } from './Filter.styled';
 import { setFilter, getFilter } from 'redux/contactSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -11,8 +11,8 @@ export const Filter = () => {
 
   return (
     <>
-      <Field>Find contacts by name</Field>
-      <FieldInput
+      <label htmlFor={inputIdGenerate}>Find contacts by name</label>
+      <Field
         value={filter}
         onChange={e => dispatch(setFilter(e.target.value))}
         id={inputIdGenerate}

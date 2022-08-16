@@ -1,4 +1,4 @@
-import { Toaster } from 'react-hot-toast';
+import { ToastContainer} from 'react-toast'
 import { Container, Title } from './App.styled';
 import { Form } from './Form';
 import { ContactList } from './ContactList';
@@ -9,7 +9,7 @@ export function App() {
     <Container>
       <Title>Phonebook</Title>
       <Form />
-      <Toaster />
+      <ToastContainer />
       <Title>Contacts</Title>
       <Filter />
       <ContactList />

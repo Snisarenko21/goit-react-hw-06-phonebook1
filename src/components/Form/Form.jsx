@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toast'
 import { nanoid } from 'nanoid';
 import { SurchForm, Input, Button, Label } from './Form.styled';
 import { addContact, getContacts } from 'redux/contactSlice';
@@ -49,6 +50,7 @@ export function Form() {
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
+        
       />
       <Label>
         <label htmlFor={numberInputIdGenerate}>Number:</label>
@@ -66,6 +68,7 @@ export function Form() {
       <Button type="submit">
         <span>add contact</span>
       </Button>
+      <ToastContainer />
     </SurchForm>
   );
 }

@@ -1,14 +1,15 @@
 import styled from '@emotion/styled';
 
-export const ContactItem = styled.div`
+export const ContactItem = styled.li`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  font-size: 18px;
 `;
-export const ContactNumber = styled.div`
+export const ContactNumber = styled.h2`
   color: rgb(118, 148, 9);
 `;
-export const ContactButton = styled.div`
+export const ContactButton = styled.button`
   display: flex;
   align-items: center;
   font-weight: bold;
