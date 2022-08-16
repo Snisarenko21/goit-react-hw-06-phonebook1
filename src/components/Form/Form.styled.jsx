@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
 
-export const SurchForm = styled.div`
+export const SurchForm = styled.form`
   display: flex;
   flex-direction: column;
   width: 600px;
   border: 4px solid rgb(94, 94, 155);
   padding: 15px;
 `;
-export const Label = styled.div`
+export const Label = styled.label`
   font-size: 20px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   color: rgb(94, 94, 155);
 `;
-export const Input = styled.div`
+export const Input = styled.input`
   width: 70%;
   margin-left: 20px;
   height: 28px;
@@ -22,7 +22,7 @@ export const Input = styled.div`
   color: rgb(94, 94, 155);
   border: 2px solid rgb(118, 148, 9);
 `;
-export const Button = styled.div`
+export const Button = styled.button`
   margin-top: 44px;
   display: flex;
   align-items: center;
