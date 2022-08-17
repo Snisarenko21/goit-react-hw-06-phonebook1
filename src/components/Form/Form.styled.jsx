@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const SurchForm = styled.form`
+export const SearchForm = styled.form`
   display: flex;
   flex-direction: column;
   width: 600px;

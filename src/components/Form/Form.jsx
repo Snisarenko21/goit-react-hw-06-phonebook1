@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toast'
 import { nanoid } from 'nanoid';
-import { SurchForm, Input, Button, Label } from './Form.styled';
+import { SearchForm, Input, Button, Label } from './Form.styled';
 import { addContact, getContacts } from 'redux/contactSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -36,7 +36,7 @@ export function Form() {
   };
 
   return (
-    <SurchForm onSubmit={handleSubmit}>
+    <SearchForm onSubmit={handleSubmit}>
       <Label>
         <label htmlFor={nameInputIdGenerate}>Name:</label>
       </Label>
@@ -68,6 +68,6 @@ export function Form() {
         <span>add contact</span>
       </Button>
       <ToastContainer />
-    </SurchForm>
+    </SearchForm>
   );
 }
